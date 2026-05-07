@@ -8,7 +8,7 @@ namespace introduccionCsharp.Controllers
 {
     public class PruebaController : Controller
     {
-        // GET: Prueba
+        // GET: Prueba ggggg
         public ActionResult Index()
         {
             return View();
