@@ -1,0 +1,33 @@
+﻿@model introduccionCsharp.Models.MultiplicacionSuma
+@{
+    ViewBag.Title = "Multiplicación Suma";
+}
+
+<h2>Multiplicación con Procedimiento</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/" method="post">
+                <label>Número 1: </label>
+                <input type="text" name="Num1" value="@Model.Num1" />
+                <br />
+                <label>Número 2: </label>
+                <input type="text" name="Num2" value="@Model.Num2" />
+                <br /><br />
+                <input type="submit" value="Calcular" />
+            </form>
+        </div>
+
+        <div class="col-lg-6">
+            <br />
+
+            <h1>El Resultado es: </h1>
+
+            @if (Model.Res != 0)
+            {
+                <h1>@Model.ProcesoTexto = @Model.Res</h1>
+            }
+        </div>
+    </div>
+</div>
